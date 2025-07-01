@@ -57,6 +57,28 @@ The dataset includes the following key features:
 
 ---
 
+## 🛠️ Environment Setup (macOS/Linux)
+
+To keep dependencies isolated and reproducible, use a virtual environment.
+
+### 📦 Create and Activate Virtual Environment
+
+```bash
+# Step 1: Navigate to your project directory
+cd /path/to/Hotel-Reservation-System
+
+# Step 2: Create a virtual environment
+python3 -m venv .venv
+
+# Step 3: Activate the virtual environment
+source .venv/bin/activate
+
+# Step 4: Upgrade pip
+pip install --upgrade pip
+
+# Step 5: Install dependencies
+pip install -r requirements.txt
+
 ## 🧠 Tech Stack
 
 - **Programming Language**: Python
