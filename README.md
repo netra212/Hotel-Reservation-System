@@ -71,7 +71,7 @@ The dataset includes the following key features:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/Hotel-Reservation-System.git
+    git clone https://github.com/netra212/Hotel-Reservation-System.git
     cd Hotel-Reservation-System
     ```
 
@@ -86,19 +86,3 @@ The dataset includes the following key features:
     ```
 
 ---
-
-## 📈 Potential Improvements
-
-- Deploy model using **Streamlit** or **Flask**
-- Add **real-time prediction API**
-- Integrate **explainable AI (SHAP / LIME)** for transparency
-- Build a hotel-facing dashboard to monitor trends and alerts
-
----
-
-## 🤝 Connect with Me
-
-If you’re a recruiter, hotel executive, or fellow developer interested in collaboration or hiring, feel free to reach out on [LinkedIn](https://www.linkedin.com).
-
----
-
