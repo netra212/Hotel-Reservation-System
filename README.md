@@ -78,6 +78,7 @@ pip install --upgrade pip
 
 # Step 5: Install dependencies
 pip install -r requirements.txt
+```
 
 ## 🧠 Tech Stack
 
