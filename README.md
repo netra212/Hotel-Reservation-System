@@ -143,3 +143,18 @@ pip install -r requirements.txt
     ```
 
 ---
+
+---
+### 🔥 How to Build and Run This Dockerfile
+
+### Build Docker image
+docker build -t jenkins-dind .
+
+### Run with Docker socket mounted (replaces full DinD)
+```
+docker run -d -p 8080:8080 -p 50000:50000 \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v jenkins_home:/var/jenkins_home \
+    --name jenkins-dind jenkins-dind
+```
+---
