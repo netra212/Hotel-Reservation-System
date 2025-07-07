@@ -62,7 +62,7 @@ The dataset includes the following key features:
 Track experiments, models, and metrics:
 
 ![MLflow Dashboard](/Predictions/mlflow_dataset1.png)
-![](/mlflow_model_parameters.png)
+![](/Predictions/mlflow_model_parameters.png)
 ![](/Predictions/mlflow_accuracy.png)
 
 ---
