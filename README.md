@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 ## 🧠 Tech Stack
 
-- **Programming Language**: Python
+- **Programming Language**: Python, HTML, CSS (front-end)
 - **Data Analysis & Processing**: Pandas, NumPy
 - **Modeling**: Scikit-learn, XGBoost, Random Forest, Logistic Regression
 - **Visualization**: Matplotlib, Seaborn
