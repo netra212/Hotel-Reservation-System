@@ -106,6 +106,8 @@ pip install -r requirements.txt
 3. Run the notebook or script to train the model and view results:
     ```bash
     jupyter notebook hotel_reservation_prediction.ipynb
+
+    python app.py
     ```
 
 ---
