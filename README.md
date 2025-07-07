@@ -70,7 +70,7 @@ Track experiments, models, and metrics:
 > Users input booking details to get cancellation predictions.
 
 ![Model Prediction](/Predictions/PredictionImage1.png)
-!(/Predictions/PredictionImage2.png)
+![](/Predictions/PredictionImage2.png)
 
 ---
 
