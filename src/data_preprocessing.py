@@ -1,13 +1,13 @@
 import os
 import pandas as pd
 import numpy as np
-from src.logger import get_logger
 from src.custom_exception import CustomException
 from config.paths_config import *
 from utils.common_functions import read_yaml,load_data
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import SMOTE
+from src.logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -150,6 +150,6 @@ class DataProcessor:
             logger.error(f"Error during preprocessing pipeline {e}")
             raise CustomException("Error while data preprocessing pipeline", e)
     
-if __name__=="__main__":
+if __name__ == "__main__":
     processor = DataProcessor(TRAIN_FILE_PATH,TEST_FILE_PATH,PROCESSED_DIR,CONFIG_PATH)
     processor.process()       
