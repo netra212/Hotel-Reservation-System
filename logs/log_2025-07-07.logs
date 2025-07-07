@@ -1,0 +1,74 @@
+2025-07-07 10:33:44,001 - INFO -Succesfully read the YAML file
+2025-07-07 10:33:44,001 - INFO -Loading data from RAW directory
+2025-07-07 10:33:44,001 - INFO -Loading data
+2025-07-07 10:33:44,029 - INFO -Loading data
+2025-07-07 10:33:44,036 - INFO -Starting our Data Processing step
+2025-07-07 10:33:44,036 - INFO -Dropping the columns
+2025-07-07 10:33:44,046 - INFO -Applying Label Encoding
+2025-07-07 10:33:44,054 - INFO -Label Mappings are : 
+2025-07-07 10:33:44,054 - INFO -type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-07-07 10:33:44,054 - INFO -required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-07 10:33:44,054 - INFO -room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-07-07 10:33:44,054 - INFO -market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-07-07 10:33:44,054 - INFO -repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-07 10:33:44,054 - INFO -booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-07-07 10:33:44,054 - INFO -Doing Skewness HAndling
+2025-07-07 10:33:44,056 - INFO -Starting our Data Processing step
+2025-07-07 10:33:44,056 - INFO -Dropping the columns
+2025-07-07 10:33:44,059 - INFO -Applying Label Encoding
+2025-07-07 10:33:44,062 - INFO -Label Mappings are : 
+2025-07-07 10:33:44,062 - INFO -type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-07-07 10:33:44,062 - INFO -required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-07 10:33:44,062 - INFO -room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-07-07 10:33:44,062 - INFO -market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-07-07 10:33:44,062 - INFO -repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-07-07 10:33:44,062 - INFO -booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-07-07 10:33:44,062 - INFO -Doing Skewness HAndling
+2025-07-07 10:33:44,063 - INFO -Handling Imbalanced Data
+2025-07-07 10:33:44,119 - INFO -Data balanced sucessfully
+2025-07-07 10:33:44,120 - INFO -Handling Imbalanced Data
+2025-07-07 10:33:44,128 - INFO -Data balanced sucessfully
+2025-07-07 10:33:44,128 - INFO -Starting our Feature selection step
+2025-07-07 10:33:46,231 - INFO -Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'type_of_meal_plan' 'room_type_reserved']
+2025-07-07 10:33:46,232 - INFO -Feature slection completed sucesfully
+2025-07-07 10:33:46,237 - INFO -Saving our data in processed folder
+2025-07-07 10:33:46,283 - INFO -Data saved sucesfuly to artifacts/processed/processed_train.csv
+2025-07-07 10:33:46,283 - INFO -Saving our data in processed folder
+2025-07-07 10:33:46,296 - INFO -Data saved sucesfuly to artifacts/processed/processed_test.csv
+2025-07-07 10:33:46,296 - INFO -Data processing completed sucesfully
+2025-07-07 11:39:47,694 - INFO -Starting our Model Training pipeline
+2025-07-07 11:39:47,694 - INFO -Starting our MLFLOW experimentation
+2025-07-07 11:39:47,694 - INFO -Logging the training and testing datset to MLFLOW
+2025-07-07 11:39:47,695 - ERROR -Error in model training pipeline When an mlflow-artifacts URI was supplied, the tracking URI must be a valid http or https URI, but it was currently set to file:///Users/user/Desktop/Hotel-Reservation-System/mlruns. Perhaps you forgot to set the tracking URI to the running MLflow server. To set the tracking URI, use either of the following methods:
+1. Set the MLFLOW_TRACKING_URI environment variable to the desired tracking URI. `export MLFLOW_TRACKING_URI=http://localhost:5000`
+2. Set the tracking URI programmatically by calling `mlflow.set_tracking_uri`. `mlflow.set_tracking_uri('http://localhost:5000')`
+2025-07-07 11:44:29,437 - ERROR -Error in model training pipeline API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+2025-07-07 11:45:27,662 - ERROR -Error in model training pipeline API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+2025-07-07 11:46:02,845 - ERROR -Error in model training pipeline API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+2025-07-07 11:53:27,431 - ERROR -Error in model training pipeline API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+2025-07-07 11:54:54,030 - ERROR -Error in model training pipeline API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+2025-07-07 11:58:46,536 - INFO -Starting our Model Training pipeline
+2025-07-07 11:58:46,536 - INFO -Starting our MLFLOW experimentation
+2025-07-07 11:58:46,536 - INFO -Logging the training and testing datset to MLFLOW
+2025-07-07 11:58:46,544 - INFO -Loading data from artifacts/processed/processed_train.csv
+2025-07-07 11:58:46,544 - INFO -Loading data
+2025-07-07 11:58:46,554 - INFO -Loading data from artifacts/processed/processed_test.csv
+2025-07-07 11:58:46,554 - INFO -Loading data
+2025-07-07 11:58:46,558 - INFO -Data splitted sucefully for Model Training
+2025-07-07 11:58:46,558 - INFO -Intializing our model
+2025-07-07 11:58:46,558 - INFO -Starting our Hyperparamter tuning
+2025-07-07 11:58:46,558 - INFO -Starting our Hyperparamter tuning
+2025-07-07 11:59:26,882 - INFO -Hyperparamter tuning completed
+2025-07-07 11:59:26,882 - INFO -Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-07-07 11:59:26,882 - INFO -Evaluating our model
+2025-07-07 11:59:26,914 - INFO -Accuracy Score : 0.8808561236623068
+2025-07-07 11:59:26,914 - INFO -Precision Score : 0.8663921299473805
+2025-07-07 11:59:26,914 - INFO -Recall Score : 0.9005945303210464
+2025-07-07 11:59:26,914 - INFO -F1 Score : 0.8831623134328358
+2025-07-07 11:59:26,914 - INFO -saving the model
+2025-07-07 11:59:26,929 - INFO -Model saved to artifacts/models/lgbm_model.pkl
+2025-07-07 11:59:26,929 - INFO -Logging the model into MLFLOW
+2025-07-07 11:59:26,931 - INFO -Logging Params and metrics to MLFLOW
+2025-07-07 11:59:26,954 - INFO -Model Training sucesfullly completed
