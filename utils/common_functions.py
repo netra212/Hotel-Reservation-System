@@ -21,7 +21,6 @@ def read_yaml(file_path):
         logger.error("Error while reading YAML file")
         raise CustomException("Failed to read YAMl file" , e)
     
-
 def load_data(path):
     try:
         logger.info("Loading data")
