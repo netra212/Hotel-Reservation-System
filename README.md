@@ -56,6 +56,36 @@ The dataset includes the following key features:
 | `booking_status`              | Target variable: `Canceled` / `Not_Canceled` |
 
 ---
+## 📷 Model Output & UI
+
+### 🎯 MLflow Tracking UI
+Track experiments, models, and metrics:
+
+![MLflow Dashboard](static/images/mlflow_example.png)
+
+---
+
+### 🧾 Live UI: Hotel Booking Predictor
+
+> Users input booking details to get cancellation predictions.
+
+![Model Prediction](/Predictions/PredictionImage1.png)
+!(/Predictions/PredictionImage2.png)
+
+---
+
+## 📈 Model Performance
+
+| Metric     | Score |
+|------------|-------|
+| ✅ Accuracy | **88.08%** |
+| 🎯 Precision | **86.63%** |
+| 🔄 Recall    | **90.05%** |
+| 🧠 F1 Score  | **88.31%** |
+
+_Model: LightGBM + Hyperparameter Tuning_
+
+---
 
 ## 🛠️ Environment Setup (macOS/Linux)
 
