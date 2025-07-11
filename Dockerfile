@@ -17,6 +17,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy the application code
 COPY . .
 
+# 👇 Set the PYTHONPATH so Python knows where to find your src module
+ENV PYTHONPATH="${PYTHONPATH}:/app"
+
 # Install the package in editable mode
 RUN pip install --no-cache-dir -e .
 
@@ -27,4 +30,4 @@ RUN python pipeline/training_pipeline.py
 EXPOSE 5000
 
 # Command to run the app
-CMD ["python", "application.py"]
+CMD ["python", "app.py"]
