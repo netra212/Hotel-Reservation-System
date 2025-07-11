@@ -17,12 +17,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy the application code
 COPY . .
 
-# Install Git
-RUN apt-get update && apt-get install -y git
-
-# 👇 Set the PYTHONPATH so Python knows where to find your src module
-ENV PYTHONPATH="${PYTHONPATH}:/app"
-
 # Install the package in editable mode
 RUN pip install --no-cache-dir -e .
 
