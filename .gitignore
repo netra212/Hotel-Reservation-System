@@ -1,1 +1,3 @@
-.venv
+.venv/
+mlruns/
+hotel_reservation_system.egg-info/
