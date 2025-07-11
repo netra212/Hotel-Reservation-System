@@ -58,6 +58,26 @@ The dataset includes the following key features:
 ---
 ## 📷 Model Output & UI
 
+## 🛠️ CI/CD Deployment Pipeline
+
+This project is fully automated using **Jenkins + Docker + GCP Cloud Run**. Below are the visual results of successful CI/CD execution and cloud deployment.
+
+### ✅ Successful Jenkins Pipeline Execution
+
+### 🚀 CI-CD Pipeline success
+
+![CI CD Pipeline success](/Images/CI-CD-pipeline-success.png)
+
+### 🚀 GCP Dashboard
+
+![GCP Console](/Images/deployed_containers.png)
+
+### 🚀 Google Cloud Run Deployment
+
+![GCP Cloud Run Deployment Screenshot](/Images/deployed_project.png)
+
+---
+
 ### 🎯 MLflow Tracking UI
 Track experiments, models, and metrics:
 
@@ -141,23 +161,5 @@ pip install -r requirements.txt
 
     python app.py
     ```
-
----
-
-## 🛠️ CI/CD Deployment Pipeline
-
-This project is fully automated using **Jenkins + Docker + GCP Cloud Run**. Below are the visual results of successful CI/CD execution and cloud deployment.
-
-### ✅ Successful Jenkins Pipeline Execution
-
-![Jenkins Success Screenshot](/Images/pipeline-success.png)
-
-### 🚀 CI-CD Pipeline success
-
-![GCP Cloud Run Deployment Screenshot](Images/CI-CD-pipeline-success.png.png)
-
-### 🚀 Google Cloud Run Deployment
-
-![GCP Cloud Run Deployment Screenshot](/Images/deployed_project.png)
 
 ---
