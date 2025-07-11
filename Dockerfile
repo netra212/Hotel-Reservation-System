@@ -23,7 +23,7 @@ COPY . .
 RUN pip install --no-cache-dir -e .
 
 # Avoid training here (optional, but better practice)
-# RUN python pipeline/training_pipeline.py
+RUN python pipeline/training_pipeline.py
 
 EXPOSE 5000
 
