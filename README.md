@@ -144,16 +144,20 @@ pip install -r requirements.txt
 
 ---
 
----
-### 🔥 How to Build and Run This Dockerfile
+## 🛠️ CI/CD Deployment Pipeline
 
-### Build Docker image
-```docker build -t jenkins-dind .```
+This project is fully automated using **Jenkins + Docker + GCP Cloud Run**. Below are the visual results of successful CI/CD execution and cloud deployment.
 
-### Run with Docker socket mounted (replaces full DinD)
-```docker run -d -p 8080:8080 -p 50000:50000 \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v jenkins_home:/var/jenkins_home \
-    --name jenkins-dind jenkins-dind
-```
+### ✅ Successful Jenkins Pipeline Execution
+
+![Jenkins Success Screenshot](/Images/pipeline-success.png)
+
+### 🚀 CI-CD Pipeline success
+
+![GCP Cloud Run Deployment Screenshot](Images/CI-CD-pipeline-success.png.png)
+
+### 🚀 Google Cloud Run Deployment
+
+![GCP Cloud Run Deployment Screenshot](/Images/deployed_project.png)
+
 ---
