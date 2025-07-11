@@ -8,6 +8,6 @@ setup(
     version = "1.0.0",
     description = "This project will classify either the booking will be cancel or not.", 
     author = "Netra Khatri",
-    packages = find_packages(),
+    packages = find_packages(include=["src", "src.*"]),
     install_requires = requirements
 )
