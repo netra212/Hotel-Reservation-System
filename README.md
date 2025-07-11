@@ -30,6 +30,12 @@ Detects and flags users with a pattern of frequent cancellations, helping hotels
 
 ---
 
+## Preject Workflow
+
+![Overview of Project Workflow](/Images/Project-Workflow.png)
+
+---
+
 ## 📊 Dataset
 
 **Source**: Kaggle - Hotel Booking Dataset  
