@@ -24,7 +24,6 @@ def index():
         type_of_meal_plan = int(request.form["type_of_meal_plan"])
         room_type_reserved = int(request.form["room_type_reserved"])
 
-
         features = np.array([[lead_time,no_of_special_request,avg_price_per_room,arrival_month,arrival_date,market_segment_type,no_of_week_nights,no_of_weekend_nights,type_of_meal_plan,room_type_reserved]])
 
         prediction = loaded_model.predict(features)
